@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>สรุปเงินเดือนพนักงานรายปี</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Trirong' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+  <!-- Bootsrap -->
+  <link rel="stylesheet" href="../vendors/css/bootstrap.min.css">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="../vendors/css/font-awesome.min.css">
+
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="../vendors/css/owl.carousel.css">
+
+  <!-- Template main Css -->
+  <link rel="stylesheet" href="../resources/css/salary_y.css">
+
+
+  <!--************************ Language **************************-->
+  <link rel="stylesheet" href="../resources/fonts/trirong.css">
+  <!--************************ Language **************************-->
+
+  <!--************************ dataTable *************************-->
+  <!--
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/css/dataTables.bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+-->
+
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--************************ dataTable *************************-->
+  <style>
+    .back-to-top {
+      cursor: pointer;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+    }
+
+    .data-table .top {
+      width: 100%;
+      color: #404040;
+    }
+
+    .form-control.input-sm {
+      height: 32px;
+    }
+
+    .data-table .dataTables_filter {
+      float: right;
+    }
+
+    .dataTables_paginate.paging_simple_numbers {
+      margin-left: auto;
+    }
+
+    .data-table .bottom {
+      align-items: center;
+      display: flex;
+      height: 8px;
+      width: 100%;
+      justify-content: left;
+      font-family: "Trirong", sans-serif;
+      color: #404040;
+      font-size: 12px;
+    }
+
+    .select.form-control.input-sm {
+      height: 32px !important;
+    }
+
+    th {
+      color: white;
+      background-color: #0984E3;
+    }
+
+    .data-table {
+      width: 80%;
+      margin-top: 8px;
+    }
+
+    .data-table th {
+      text-align: center;
+    }
+
+    .data-table #nums {
+      font-family: "Kanit", sans-serif;
+    }
+
+    .data-table #texts {
+      font-family: "Trirong", sans-serif;
+    }
+  </style>
+  <!--************************ end dataTable *************************-->
+
+
+
+  <style>
+    #font-Trirong {
+      font-family: "Trirong", sans-serif;
+      margin-top: -5px;
+    }
+
+    .frame {
+      margin-top: 0px;
+    }
+
+    #button-year {
+      background-color: #0abde3;
+      border-color: #0abde3;
+    }
+
+    #button-year:hover {
+      background-color: #0AA3C4;
+      border-color: #0AA3C4;
+    }
+
+    #button-year-default {
+      background-color: #707070;
+      border-color: #707070;
+    }
+
+    #button-year-default:hover {
+      background-color: #505050;
+      border-color: #505050;
+    }
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+  <header class="main-header">
+
+
+    <nav class="navbar navbar-static-top">
+
+      <div class="navbar-main">
+
+        <div class="container">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                  </button>
+
+            <a class="navbar-brand" href="">
+              <img class="photo-nav" src="../resources/images/logo.png" alt=""></a>
+
+          </div>
+
+          <div class="navbar-collapse collapse pull-right">
+
+            <ul class="nav navbar-nav">
+
+              <li><a href="list_emp.html" id="font-Trirong" href="">รายชื่อพนักงาน</a></li>
+              <li><a class="is-active" id="font-Trirong">เงินเดือน</a></li>
+              <li><a href="login.html" id="font-Trirong">ออกจากระบบ</a></li>
+
+            </ul>
+
+
+          </div>
+          <!-- /#navbar -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.navbar-main -->
+    </nav>
+
+  </header>
+  <!-- /. main-header -->
+
+  <!-- /. login -->
+  <div class="container">
+    <div class="row">
+
+      <h1 class="text-center"></h1>
+      <div class="account-wall">
+        <div class="frame">
+
+          <br>
+          <h1 style=" font-size: 28px; margin-left: 38px; ">สรุปข้อมูลเงินเดือนพนักงานรายปี</h1>
+          <br><br>
+
+          <div class="" style=" font-size: 16px; margin-left: 37%; color: #000000;">
+            รวมเงินเดือนทั้งหมด&nbsp;&nbsp;รวมรายการปรับเพิ่มทั้งหมด&nbsp;&nbsp;รวมรายการปรับลดทั้งหมด&nbsp;&nbsp;&nbsp;ยอดเงินรวมทั้งหมด
+            <br>
+            <div class="" style=" font-size: 18px;   font-family: " Kanit ", sans-serif; ">
+              <span style=" margin-left: 15px;">฿</span><span style=" margin-left: 15px;">840,000</span>
+              <span style=" margin-left: 50px; color: #28A745;">฿</span><span style=" margin-left: 25px; color: #28A745;">222,900</span>
+              <span style=" margin-left: 70px; color: #DE3545;">฿</span><span style=" margin-left: 25px; color: #DE3545;">541,700</span>
+              <span style=" margin-left: 50px; color: #007BFF;">฿</span><span style=" margin-left: 25px; color: #007BFF;">840,200</span>
+            </div>
+
+
+          </div>
+
+          <select class="form-control form-control-sm" style=" margin-top: 8px;">
+            <option>2018</option>
+              <option>2017</option>
+            <option>2016</option>
+        </select>
+
+
+          <center>
+            <div class="data-table">
+              <table id="" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th>เดือน</th>
+                    <th>จำนวนพนักงาน</th>
+                    <th>รวมเงินเดือน</th>
+                    <th>รวมรายการปรับเพิ่ม</th>
+                    <th>รวมรายการปรับลด</th>
+                    <th>ยอดเงินรวม</th>
+
+
+                  </tr>
+                </thead>
+
+                <tbody style="color: #000000; text-align: center;">
+                  <tr>
+                    <td>
+                      <div class="">
+                        <a href="salary_m.html">
+                      <button id="button-year" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true"> ธันวาคม </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">พฤศจิกายน</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">ตุลาคม</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">กันยายน</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">สิงหาคม</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">กรกฎาคม </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">มิถุนายน </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">พฤษภาคม </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">เมษายน</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">มีนาคม </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">กุมภาพันธ์ </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <a href="#">
+                      <button id="button-year-default" class="btn btn-warning">
+  	                  <span class="" aria-hidden="true">มกราคม </span>
+                      </button>
+                    </div>
+                  </td>
+                  <td>50</td>
+                  <td>140,000</td>
+                  <td>3,000</td>
+                  <td>400</td>
+                  <td>142,600</td>
+
+    						</tr>
+
+    					</tbody>
+    				</table>
+    			</div>
+</center>
+
+<br>
+
+
+
+          </div>
+      <!-- /.account-wall -->
+        </div>
+    </div>
+      <!-- /.end row -->
+  </div>
+  <!-- /.end login -->
+
+
+
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container text-right">
+      <a>Copyright © 2018 A-VALUE Technology Co.,Ltd.</a>
+                      </div>
+            </div>
+            <!-- end footer -->
+
+            <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
+            <script type="text/javascript">
+              $(document).ready(function() {
+                $('#example').DataTable({
+                  "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+                  "language": {
+                    "lengthMenu": "แสดง_MENU_ รายการ",
+                    "info": "",
+                    "sSearch": "",
+                    "paginate": {
+                      "previous": "ก่อน",
+                      "next": "ถัดไป",
+                    }
+                  }
+                });
+
+                $(window).scroll(function() {
+                  if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                  } else {
+                    $('#back-to-top').fadeOut();
+                  }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function() {
+                  $('#back-to-top').tooltip('hide');
+                  $('body,html').animate({
+                    scrollTop: 0
+                  }, 800);
+                  return false;
+                });
+
+                $('#back-to-top').tooltip('show');
+
+              });
+            </script>
+
+</body>
+
+</html>

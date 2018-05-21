@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>login</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Trirong' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+  <!-- Bootsrap -->
+  <link rel="stylesheet" href="../vendors/css/bootstrap.min.css">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="../vendors/css/font-awesome.min.css">
+
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="../vendors/css/owl.carousel.css">
+
+  <!-- Template main Css -->
+  <link rel="stylesheet" href="../resources/css/form_emp.css">
+
+  <!--************************ Language **************************-->
+  <link rel="stylesheet" href="../resources/fonts/trirong.css">
+  <!--************************ Language **************************-->
+  <!-- upload file -->
+  <link rel="stylesheet" href="../vendors/js/uploadimg.js">
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <header class="main-header">
+
+
+    <nav class="navbar navbar-static-top">
+
+      <div class="navbar-main">
+
+        <div class="container">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="">
+              <img class="photo-nav" src="../resources/images/logo.png" alt="">
+            </a>
+
+          </div>
+
+          <div class="navbar-collapse collapse pull-right">
+
+
+          </div>
+          <!-- /#navbar -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.navbar-main -->
+    </nav>
+
+  </header>
+  <!-- /. main-header -->
+
+  <!-- /. login -->
+  <div class="container">
+    <div class="account-wall">
+      <h1>แก้ไขข้อมูลพนักงาน</h1>
+      <form class="form-signin">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <h2>ข้อมูลส่วนตัว</h2>
+              <select class="form-control user-name" id="country" name="country">
+                <option value="australia">คำนำหน้า</option>
+                <option value="canada">นาย</option>
+                <option value="usa">นาง</option>
+                <option value="usa">นางสาว</option>
+              </select>
+              <input class="form-control name" placeholder="ชื่อ - นามสกุล" required>
+              <input class="form-control" placeholder="ชื่อเล่น" required>
+              <input class="form-control" placeholder="เลือกเพศ" required>
+              <input class="form-control" placeholder="ตำแหน่ง" required>
+              <input class="form-control" placeholder="วัน / เดือน / ปีเกิด" required>
+              <input class="form-control" placeholder="เลขบัตรประชาชน" required>
+              <input class="form-control" placeholder="วันที่เริ่มงาน" required>
+
+            </div>
+            <div class="col-sm-6">
+              <h2>ข้อมูลส่วนตัว</h2>
+             
+              <div id="kv-avatar-errors-2" class="center-block" style="width:800px;display:none"></div>
+              <div class="kv-avatar">
+                <div class="file-loading">
+                    <input id="avatar-2" name="avatar-2" type="file" required>
+                </div>
+            </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+            <h2 class="left15">ข้อมูลติดต่อ</h2>
+            <div class="col-sm-6">
+
+              <input class="form-control" placeholder="ที่อยู่" required>
+              <input class="form-control" placeholder="อำเภอ" required>
+              <input class="form-control" placeholder="เบอร์โทรศัพท์" required>
+              <input class="form-control" placeholder="อีเมล" required>
+            </div>
+            <div class="col-sm-6">
+              <input class="form-control" placeholder="ตำบล" required>
+              <input class="form-control" placeholder="จังหวัด" required>
+              <input class="form-control" placeholder="รหัสไปรษณีย์" required>
+            </div>
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <h2>เงินเดือน</h2>
+              <input class="form-control" placeholder="เงินเดือน" required>
+              <input class="form-control" placeholder="ประกันสังคม" required>
+
+            </div>
+            <div class="col-sm-6">
+              <h2>ข้อมูลในการจ่ายเงินเดือน</h2>
+              <select class="form-control" id="country" name="country">
+                <option class="form-control" value="australia">
+                  <h3>-- กรูณาเลือกธนาคาร --</h3>
+                </option>
+                <option value="">ธนาคาร กรุงเทพ ( BBL )</option>
+                <option value="">ธนาคาร กรุงไทย ( KTB )</option>
+                <option value="">ธนาคาร กสิกรไทย ( KBANK )</option>
+                <option value="">ธนาคารทิสโก้ (TISCO)</option>
+                <option value="">ธนาคาร ไทยพาณิชย์ ( SCB )</option>
+                <option value="">ธนาคาร ออมสิน ( GSB )</option>
+                <option value="">ธนาคาร ทหารไทย ( TMB )</option>
+                <option value="">ธนาคาร ธนชาต ( TBANK )</option>
+                <option value="">ธนาคาร ธกส. (BAAC )</option>
+              </select>
+              <input class="form-control" placeholder="เลขที่บัญชี" required>
+              <input class="form-control" placeholder="สาขาบัญชี" required>
+
+            </div>
+          </div>
+
+
+          <!--button-->
+          <div class="row">
+            <button type="button" class="btn btn-primary save">บันทึก</button>
+            <button type="button" class="btn btn-default cancel">ยกเลิก</button>
+          </div>
+          <!--End button-->
+        </div>
+
+        <a id="lang" href="#" class="text-center new-account"></a>
+    </div>
+    <!-- /.end login -->
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container text-right">
+        <a>Copyright © 2018 A-VALUE Technology Co.,Ltd.</a>
+      </div>
+    </div>
+    <!-- end footer -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+
+/***************** form-group form-control  ******************/
+.form-control {
+  width: 580px;
+}
+.form-control.form-control-sm {
+  width: 380px;
+}
